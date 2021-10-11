@@ -78,7 +78,7 @@ class Customer(models.Model):
 
     def __str__(self):
         if not (self.user.first_name and self.user.last_name):
-            return self.user.username
+            return self.user.user_name
         return "Покупатель: {} {}".format(self.user.first_name, self.user.last_name)
 
 
